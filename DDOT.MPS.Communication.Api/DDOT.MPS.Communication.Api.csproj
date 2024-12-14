@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.Azure.SignalR" Version="1.29.0" />
+    <PackageReference Include="Microsoft.Graph" Version="5.65.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DDOT.MPS.Communication.Core\DDOT.MPS.Communication.Core.csproj" />
+    <ProjectReference Include="..\DDOT.MPS.Communication.Model\DDOT.MPS.Communication.Model.csproj" />
+  </ItemGroup>
+
+</Project>

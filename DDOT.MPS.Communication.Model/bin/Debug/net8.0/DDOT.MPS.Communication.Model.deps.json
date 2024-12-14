@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DDOT.MPS.Communication.Model/1.0.0": {
+        "dependencies": {
+          "DDOT.MPS.Communication.Core": "1.0.0"
+        },
+        "runtime": {
+          "DDOT.MPS.Communication.Model.dll": {}
+        }
+      },
+      "DDOT.MPS.Communication.Core/1.0.0": {
+        "runtime": {
+          "DDOT.MPS.Communication.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DDOT.MPS.Communication.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DDOT.MPS.Communication.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

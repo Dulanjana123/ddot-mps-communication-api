@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c8xTXDZf6GzZWjsaurshFGsUnZFNZBlIDQfG170+wN4=",
+  "Source": "DDOT.MPS.Communication.Api",
+  "BasePath": "_content/DDOT.MPS.Communication.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,81 @@
+parameters:
+  - name: stageName
+    type: string
+
+  - name: stageDisplayName
+    type: string
+
+  - name: agentPool
+    type: string
+
+  - name: agentDemand
+    type: string
+
+  - name: tag
+    type: string
+
+  - name: resourceGroup
+    type: string
+
+  - name: serviceConnectionName
+    type: string
+
+  - name: containerAppName
+    type: string
+
+stages:
+  - stage: ${{ parameters.stageName }}
+    displayName: ${{ parameters.stageDisplayName }}
+    jobs:
+      - job: BuildAndPush
+        displayName: Build and Push to Repository
+        pool:
+          name: ${{ parameters.agentPool }}
+          demands:
+            - Agent.Name -equals ${{ parameters.agentDemand }}
+        steps:
+          - task: Docker@2
+            displayName: Build Docker Image
+            inputs:
+              containerRegistry: '$(containerRegistryServiceConnectionName)'
+              repository: '$(repositorImageName)'
+              command: 'build'
+              Dockerfile: '$(dockerfilePath)'
+              tags: '$(buildId)-${{ parameters.tag }}'
+              arguments: '--build-arg ENV=${{ parameters.tag }}'
+
+          - task: Docker@2
+            displayName: Push Docker Image
+            inputs:
+              containerRegistry: '$(containerRegistryServiceConnectionName)'
+              repository: '$(repositorImageName)'
+              command: 'push'
+              tags: '$(buildId)-${{ parameters.tag }}'
+
+          - script: |
+              echo "Deleting Docker images in the build agent to free up space"
+              sudo docker system prune -f -a --volumes
+            displayName: "Remove Docker Images in the build agent"
+
+      - deployment: Deploy${{ parameters.stageName }}
+        displayName: Deploy to Container App
+        dependsOn: BuildAndPush
+        condition: succeeded()
+        pool:
+          name: ${{ parameters.agentPool }}
+          demands:
+            - Agent.Name -equals ${{ parameters.agentDemand }}
+        environment: '${{ parameters.stageName }}'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AzureContainerApps@1
+                  displayName: 'Deploy to Azure Container App'
+                  inputs:
+                    azureSubscription: '${{ parameters.serviceConnectionName }}'
+                    imageToDeploy: '$(containerRegistry)/$(repositorImageName):$(buildId)-${{ parameters.tag }}'
+                    containerAppName: '${{ parameters.containerAppName }}'
+                    resourceGroup: '${{ parameters.resourceGroup }}'
+                    environmentVariables: 'ENV=${{ parameters.tag }} ASPNETCORE_ENVIRONMENT=${{ parameters.tag }} ASPNETCORE_URLS=https://+:3800'
+                    

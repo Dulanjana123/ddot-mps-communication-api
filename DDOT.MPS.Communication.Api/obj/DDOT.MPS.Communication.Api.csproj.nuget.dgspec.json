@@ -1,0 +1,223 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Api\\DDOT.MPS.Communication.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Api\\DDOT.MPS.Communication.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Api\\DDOT.MPS.Communication.Api.csproj",
+        "projectName": "DDOT.MPS.Communication.Api",
+        "projectPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Api\\DDOT.MPS.Communication.Api.csproj",
+        "packagesPath": "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\",
+        "outputPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DulanjanaDissanayake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Core\\DDOT.MPS.Communication.Core.csproj": {
+                "projectPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Core\\DDOT.MPS.Communication.Core.csproj"
+              },
+              "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Model\\DDOT.MPS.Communication.Model.csproj": {
+                "projectPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Model\\DDOT.MPS.Communication.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
+            "Microsoft.Azure.SignalR": {
+              "target": "Package",
+              "version": "[1.29.0, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[5.65.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Core\\DDOT.MPS.Communication.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Core\\DDOT.MPS.Communication.Core.csproj",
+        "projectName": "DDOT.MPS.Communication.Core",
+        "projectPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Core\\DDOT.MPS.Communication.Core.csproj",
+        "packagesPath": "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\",
+        "outputPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DulanjanaDissanayake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Model\\DDOT.MPS.Communication.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Model\\DDOT.MPS.Communication.Model.csproj",
+        "projectName": "DDOT.MPS.Communication.Model",
+        "projectPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Model\\DDOT.MPS.Communication.Model.csproj",
+        "packagesPath": "C:\\Users\\DulanjanaDissanayake\\.nuget\\packages\\",
+        "outputPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DulanjanaDissanayake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Core\\DDOT.MPS.Communication.Core.csproj": {
+                "projectPath": "C:\\Dulanjana\\DevOps\\Dotnet\\ddot-mps-communication-api\\DDOT.MPS.Communication.Core\\DDOT.MPS.Communication.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "ContainingType": "DDOT.MPS.Communication.Api.Controllers.MeetingsController",
+    "Method": "Availability",
+    "RelativePath": "api/v1/Meetings/availability",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "availabilityRequest",
+        "Type": "DDOT.MPS.Communication.Model.Requests.AvailabilityRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Communication.Model.Responses.BaseResponse\u00601[[System.Collections.Generic.IList\u00601[[DDOT.MPS.Communication.Model.Dtos.AvailabilityDto, DDOT.MPS.Communication.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Communication.Api.Controllers.MeetingsController",
+    "Method": "Cancel",
+    "RelativePath": "api/v1/Meetings/cancel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cancelRequest",
+        "Type": "DDOT.MPS.Communication.Model.Requests.CancelMeetingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Communication.Model.Responses.BaseResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Communication.Api.Controllers.MeetingsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/Meetings/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "meetingRequest",
+        "Type": "DDOT.MPS.Communication.Model.Requests.CreateMeetingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Communication.Model.Responses.BaseResponse\u00601[[DDOT.MPS.Communication.Model.Dtos.MeetingDto, DDOT.MPS.Communication.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Communication.Api.Controllers.MeetingsController",
+    "Method": "Forward",
+    "RelativePath": "api/v1/Meetings/forward",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "forwardRequest",
+        "Type": "DDOT.MPS.Communication.Model.Requests.ForwardMeetingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DDOT.MPS.Communication.Model.Responses.BaseResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DDOT.MPS.Communication.Api.Controllers.NotificationController",
+    "Method": "Notify",
+    "RelativePath": "api/v1/Notification/notify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Communication.Model.Dtos.NotificationRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DDOT.MPS.Communication.Api.Controllers.NotificationController",
+    "Method": "NotifyGlobal",
+    "RelativePath": "api/v1/Notification/notify-global",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DDOT.MPS.Communication.Model.Dtos.GlobalNotificationRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

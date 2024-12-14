@@ -1,0 +1,12 @@
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\bin\Debug\net8.0\DDOT.MPS.Communication.Core.deps.json
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\bin\Debug\net8.0\DDOT.MPS.Communication.Core.dll
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\bin\Debug\net8.0\DDOT.MPS.Communication.Core.pdb
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\DDOT.MPS.Communication.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\DDOT.MPS.Communication.Core.AssemblyInfoInputs.cache
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\DDOT.MPS.Communication.Core.AssemblyInfo.cs
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\DDOT.MPS.Communication.Core.csproj.CoreCompileInputs.cache
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\DDOT.MPS.Communication.Core.sourcelink.json
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\DDOT.MPS.Communication.Core.dll
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\refint\DDOT.MPS.Communication.Core.dll
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\DDOT.MPS.Communication.Core.pdb
+C:\Dulanjana\DevOps\DDOT MPS\ddot-mps-communication-api\DDOT.MPS.Communication.Core\obj\Debug\net8.0\ref\DDOT.MPS.Communication.Core.dll

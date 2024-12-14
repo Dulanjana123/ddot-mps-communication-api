@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DDOT.MPS.Communication.Api.props" />
+</Project>

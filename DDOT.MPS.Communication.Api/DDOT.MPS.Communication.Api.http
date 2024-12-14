@@ -1,0 +1,6 @@
+@DDOT.MPS.Communication.Api_HostAddress = http://localhost:5188
+
+GET {{DDOT.MPS.Communication.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

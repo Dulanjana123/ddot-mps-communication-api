@@ -1,0 +1,36 @@
+trigger:
+  - develop
+
+resources:
+  - repo: self
+
+variables:
+  containerRegistry: "ddotmpscontainerregistry.azurecr.io"
+  repositorImageName: "ddot-mps-communication-api"
+  azureSubscription: 'ddot-mps-dev-service-connection'
+  dockerfilePath: "$(Build.SourcesDirectory)/Dockerfile"
+  buildId: "$(Build.BuildId)"
+  containerRegistryServiceConnectionName: 'ddot-mps-acr-service-connection'
+
+stages:
+  - template: 'pipeline-templates/build-push-and-deploy-stage.yml'
+    parameters:
+      stageName: 'Development'
+      stageDisplayName: 'Development Environment'
+      agentPool: 'DdotMpsAgentPoolDev'
+      agentDemand: 'mps-temp-ubuntu-2'
+      tag: 'development'
+      resourceGroup: 'ddot-mps-dev-rg'
+      serviceConnectionName: 'ddot-mps-dev-service-connection'
+      containerAppName: 'ddot-mps-dev-communication-app'
+
+  - template: 'pipeline-templates/build-push-and-deploy-stage.yml'
+    parameters:
+      stageName: 'Test'
+      stageDisplayName: 'Test Environment'
+      agentPool: 'DdotMpsAgentPoolTest'
+      agentDemand: 'mps-shared-builder-agent'
+      tag: 'test'
+      resourceGroup: 'ddot-mps-test-rg'
+      serviceConnectionName: 'ddot-mps-test-service-connection'
+      containerAppName: 'ddot-mps-test-communication-app'
